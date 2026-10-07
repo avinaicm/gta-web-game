@@ -9,16 +9,36 @@
   <body>
     <div id="hud">
       <div id="title">Neon District</div>
-      <div id="status">Driving</div>
+      <div id="status">Ready</div>
+      <div id="stats">
+        <span id="healthLabel">Health: 100</span>
+        <span id="wantedLabel">Wanted: 0</span>
+        <span id="speedLabel">Speed: 0</span>
+      </div>
       <div id="help">
         <span>WASD / Arrows: Drive</span>
         <span>Space: Brake</span>
+        <span>Click / F: Fire</span>
         <span>Gamepad: Drive + Rumble</span>
         <span>Multiplayer: online</span>
       </div>
     </div>
 
     <div id="crosshair"></div>
+
+    <div id="touchControls" aria-label="Touch controls">
+      <div class="touchPad">
+        <button class="touchBtn" data-action="left">◀</button>
+        <button class="touchBtn" data-action="right">▶</button>
+      </div>
+      <div class="touchPad">
+        <button class="touchBtn" data-action="accelerate">▲</button>
+        <button class="touchBtn" data-action="brake">▼</button>
+      </div>
+      <div class="touchPad">
+        <button class="touchBtn fire" data-action="fire">FIRE</button>
+      </div>
+    </div>
 
     <script type="module" src="./game.js"></script>
   </body>
